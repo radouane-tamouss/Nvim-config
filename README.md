@@ -1,18 +1,18 @@
 ## 🚀 Neovim Configuration
-###🔧 Prerequisites
+🔧 Prerequisites
 
 Neovim 0.9+
 Git
 Nerd Fonts
 
-###💾 Installation
+💾 Installation
 Backup existing config
 mv ~/.config/nvim ~/.config/nvim.bak
 Clone repository
 git clone https://github.com/yourusername/nvim-config.git ~/.config/nvim
 Open Neovim to install plugins
 nvim
-###🧩 Features
+🧩 Features
 
 - LazyVim plugin manager
 - Dracula theme
