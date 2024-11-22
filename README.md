@@ -1,12 +1,30 @@
-# Nvim-config
-# 🚀 My Neovim Configuration (LazyVim)
+## 🚀 Neovim Configuration
+###🔧 Prerequisites
 
-## 🔧 Prerequisites
-- Neovim 0.9+
-- Git
-- Nerd Font
+Neovim 0.9+
+Git
+Nerd Fonts
 
-## 🛠 Installation
-1. Backup existing configuration:
-```bash
+###💾 Installation
+Backup existing config
 mv ~/.config/nvim ~/.config/nvim.bak
+Clone repository
+git clone https://github.com/yourusername/nvim-config.git ~/.config/nvim
+Open Neovim to install plugins
+nvim
+###🧩 Features
+
+- LazyVim plugin manager
+- Dracula theme
+- LSP Support
+- Telescope file search
+
+⌨️ Key Shortcuts
+
+<leader>ff: Find files
+<leader>fg: Live grep
+
+🤝 Contributing
+Open issues or PRs!
+📄 License
+MIT License
