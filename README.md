@@ -1,7 +1,14 @@
+# My Neovim Configuration (LazyVim)
 
-# LazyVim Configuration
+This repository contains my personal configuration.
 
-This repository contains my personal configuration for LazyVim, a Neovim setup designed to enhance productivity and streamline the development process.
+## Features
+
+- **LazyVim:** A starter template for LazyVim to enhance Neovim experience.
+- **Norminette Formatter:** Integrated `c_formatter_42` for formatting code according to Norminette standards.
+- **Git Integration:** Use `diffview.nvim` for viewing git diffs and file history.
+- **Terminal Integration:** Toggle terminal seamlessly using `toggleterm.nvim`.
+- **Discord Presence:** Show Neovim activity on Discord using `presence.nvim`.
 
 ## Installation
 
@@ -20,13 +27,51 @@ This repository contains my personal configuration for LazyVim, a Neovim setup d
     sudo apt install -y ripgrep fd-find
     ```
 
-4. **Open Neovim:**
+4. **Install Norminette formatter:**
+    Install the `c_formatter_42` using pip:
+    ```sh
+    pip install c_formatter_42
+    ```
+
+5. **Open Neovim:**
     Launch Neovim to automatically install the required plugins:
     ```sh
     nvim
     ```
 
-## Contributing
+## Usage
 
-Feel free to fork this repository and submit pull requests. Any improvements or suggestions are welcome!
+- **Formatting C Code:**
+    - To format a selection of C code, use the keymap `<leader>fc` in visual mode.
+    ```lua
+    vim.keymap.set("v", "<leader>fc", ":'<,'>!python3 -m c_formatter_42<CR>", {
+      desc = "Format C selection with 42 formatter",
+      silent = true,
+    })
+    ```
 
+- **Git Diff View:**
+    - Open git diff view with `<leader>gd`.
+    ```lua
+    { "<leader>gd", "<cmd>DiffviewOpen<cr>", desc = "Git Diff View" }
+    ```
+
+- **Toggle Terminal:**
+    - Open terminal with `<c-o>`.
+    ```lua
+    require("toggleterm").setup({
+      size = 20,
+      open_mapping = [[<c-o>]],
+      direction = "float",
+    })
+    ```
+
+## Disabling Plugins
+
+To disable a plugin, you can edit the `lazy.lua` file and comment out or remove the specific plugin entry. For example, to disable `presence.nvim`:
+
+```lua
+-- { "andweeb/presence.nvim" },
+```
+
+Place this configuration in the ~/.config/nvim directory to use it. Check the .config/nvim directory to see what is going on and customize the configuration as per your needs.
