@@ -1,1 +1,0 @@
-../../../../dotconfig/.config/nvim/lua/plugins/colorscheme.lua
