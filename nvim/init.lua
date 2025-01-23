@@ -24,3 +24,9 @@ wk.register({
 })
 
 local lspconfig = require("lspconfig")
+
+require("catppuccin").setup({
+  flavour = "mocha", -- Choose between "latte", "frappe", "macchiato", "mocha"
+  -- other configurations can go here
+})
+vim.cmd.colorscheme("catppuccin")
