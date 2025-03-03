@@ -6,9 +6,7 @@ This is my Neovim setup using LazyVim. It works well on macOS.
 
 **Backup your old configuration:**
 
-    ```sh
     mv ~/.config/nvim ~/.config/nvim.bak
-    ```
 
 1. **Clone this repo:**
 
