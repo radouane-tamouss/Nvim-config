@@ -2,16 +2,11 @@
   "extras": [
     "lazyvim.plugins.extras.ai.copilot",
     "lazyvim.plugins.extras.ai.copilot-chat",
-    "lazyvim.plugins.extras.ai.supermaven",
-    "lazyvim.plugins.extras.ai.tabnine",
-    "lazyvim.plugins.extras.editor.aerial",
-    "lazyvim.plugins.extras.editor.telescope",
-    "lazyvim.plugins.extras.lang.clangd",
-    "lazyvim.plugins.extras.ui.edgy",
-    "lazyvim.plugins.extras.util.project"
+    "lazyvim.plugins.extras.lang.clangd"
   ],
+  "install_version": 8,
   "news": {
     "NEWS.md": "10960"
   },
-  "version": 7
+  "version": 8
 }
