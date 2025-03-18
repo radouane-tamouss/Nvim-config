@@ -5,3 +5,9 @@
 local keymap = vim.keymap
 
 keymap.set("n", "<C-a>", "gg<S-v>G")
+vim.api.nvim_create_autocmd("FileType", {
+  pattern = "markdown",
+  callback = function()
+    vim.keymap.set("v", "<Leader>'", 'c`<C-r>"`<Esc>', { buffer = true, desc = "Wrap selection with backticks" })
+  end,
+})
