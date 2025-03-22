@@ -1,6 +1,10 @@
 # Neovim Configuration
+## Prerequisites
+This is my Neovim setup using LazyVim. It works well on macOS and Linux.
 
-This is my Neovim setup using LazyVim. It works well on macOS.
+Before using this configuration, please make sure to:
+
+1. Install LazyVim by following the official installation guide at [LazyVim Getting Started](https://www.lazyvim.org/installation)
 
 ## How to Install
 
@@ -13,12 +17,7 @@ This is my Neovim setup using LazyVim. It works well on macOS.
     ```sh
     git clone https://github.com/radouane-tamouss/nvim-config.git ~/.config/nvim
     ```
-
-2. **Install Neovim:**
-
-    Make sure you have Neovim version 0.9.0 or later.
-
-3. **Install plugins:**
+2. **Install plugins:**
 
     Open Neovim and run:
 
